@@ -8,7 +8,6 @@
 		<delete dir="build" />
 	</target>
 // Made changes to the build.xml file
-// ASdaaaaaa
 	<target name="compile">
 		<mkdir dir="build/classes" />
 		<javac srcdir="src" destdir="build/classes" classpathref="classpath" includeantruntime="false" />
