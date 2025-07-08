@@ -25,3 +25,6 @@ public class RandomBlink {
         // gpio.shutdown();  // Normally would be here, but infinite loop for demo
     }
 }
+
+public class StateChange {
+}
