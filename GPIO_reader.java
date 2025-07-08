@@ -7,7 +7,7 @@ public class RandomBlink {
         final GpioController gpio = GpioFactory.getInstance();
 
         // Provision GPIO pin #01 as an output pin and turn it off
-        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.LOW);
+        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_03, "MyLED", PinState.LOW);
         pin.setShutdownOptions(true, PinState.LOW);
 
         // Create random number generator
