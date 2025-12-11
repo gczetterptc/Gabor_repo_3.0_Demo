@@ -28,7 +28,8 @@ curl -X POST "https://pp-250428092473.portal.ptc.io:9443/cb/api/xunit" \
   -F "testCaseTrackerId=${TESTCASE_TRACKER_ID}" \
   -F "buildIdentifier=${BUILD_IDENTIFIER}" \
   -F "defaultPackagePrefix=${DEFAULT_PACKAGE_PREFIX}" \
-  -F "files=@${ZIP_FILE};type=application/zip" \
+  -F "files=@\"${ZIP_FILE}\";type=application/zip"
   -F "testRunTrackerId=${TESTRUN_TRACKER_ID}" \
   -F "testConfigurationId=${TESTCONFIGURATION_ID}"
+
 
