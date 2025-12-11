@@ -1,0 +1,52 @@
+2025-12-11T03:49:13-06:00 : CB URL: https://pp-250428092473.portal.ptc.io:9443/cb/rest/xunitresults/
+2025-12-11T03:49:13-06:00 : CB Username: pat
+2025-12-11T03:49:13-06:00 : Test Case Tracker ID: 95392
+2025-12-11T03:49:13-06:00 : Test Run Tracker ID: 95383
+2025-12-11T03:49:13-06:00 : Results Filename: /c/ProgramData/Jenkins/.jenkins/workspace/Codebeamer_Overview_Demo_Repo/target/reports/test_results.zip
+2025-12-11T03:49:13-06:00 : Configuration: {"testConfigurationId":"","testCaseTrackerId":"95392","testCaseId":"","releaseId":"","testRunTrackerId":"95383","buildIdentifier":"","defaultPackagePrefix":""}
+Note: Unnecessary use of -X or --request, POST is already inferred.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host pp-250428092473.portal.ptc.io:9443 was resolved.
+* IPv6: (none)
+* IPv4: 127.0.0.1
+*   Trying 127.0.0.1:9443...
+* Connected to pp-250428092473.portal.ptc.io (127.0.0.1) port 9443
+* schannel: disabled automatic use of client certificate
+* using HTTP/1.x
+* Server auth using Basic with user 'pat'
+> POST /cb/rest/xunitresults/ HTTP/1.1
+> Host: pp-250428092473.portal.ptc.io:9443
+> Authorization: Basic cGF0OnB0Yw==
+> User-Agent: curl/8.8.0
+> Accept: */*
+> Content-Length: 3057
+> Content-Type: multipart/form-data; boundary=------------------------8LePvAd0PFM166NIaLLCq7
+> 
+} [3057 bytes data]
+* upload completely sent off: 3057 bytes
+< HTTP/1.1 400 
+< X-XSS-Protection: 1
+< X-Content-Type-Options: nosniff
+< Content-Security-Policy: frame-ancestors https: 'self'
+< Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+< Cross-Origin-Resource-Policy: same-site
+< Cross-Origin-Opener-Policy: unsafe-none
+< X-Frame-Options: SAMEORIGIN
+< X-Permitted-Cross-Domain-Policies: none
+< Referrer-Policy: strict-origin-when-cross-origin
+< vary: origin,accept-encoding
+< Cache-Control: no-store
+< Content-Type: application/json;charset=UTF-8
+< Content-Language: en-US
+< Transfer-Encoding: chunked
+< Date: Thu, 11 Dec 2025 09:49:13 GMT
+< Connection: close
+< 
+{ [95 bytes data]
+100  3141    0    84  100  3057    339  12369 --:--:-- --:--:-- --:--:-- 12925{
+  "exception" : "BadRequestException",
+  "message" : "Test set run is empty."
+}
+* Closing connection
+* schannel: shutting down SSL/TLS connection with pp-250428092473.portal.ptc.io port 9443
