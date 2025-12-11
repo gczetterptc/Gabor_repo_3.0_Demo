@@ -8,7 +8,7 @@ log() {
     echo -e "${ts} : $1" >> "${WORKSPACE}/target/upload.log"
 }
 LOG_FILENAME="${WORKSPACE}/target/upload.log"
-URL=$(echo ${JENKINS_URL} | awk -F":" '{print $1":"$2":9443/cb/rest/xunitresults/"}')
+URL=$(echo ${JENKINS_URL} | awk -F":" '{print $1":"$2":9443/cb/api/xunit/"}')
 USER=$1
 PASS=$2
 TEST_CASE_TRACKER_ID=$3
@@ -43,5 +43,6 @@ curl -v --location --request POST $URL -u "$USER:$PASS" \
     --form "file=@$FILE"\
 
 	>> ${LOG_FILENAME} 2>&1
+
 
 
