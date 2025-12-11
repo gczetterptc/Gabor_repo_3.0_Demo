@@ -23,7 +23,7 @@ FILE=$(echo "${WRKSPC}/target/reports/test_results.zip")
 # buildIdentifier       - Build id
 # defaultPackagePrefix  - Package prefix
 TEST_CONFIG_ID=""
-PARENT_TEST_CASE_ID=""
+PARENT_TEST_CASE_ID=$5
 RELEASE_ID=""
 BUILD_ID=""
 PACKAGE_PREFIX=""
@@ -43,4 +43,5 @@ curl -v --location --request POST $URL -u "$USER:$PASS" \
     --form "file=@$FILE"\
 
 	>> ${LOG_FILENAME} 2>&1
+
 
