@@ -7,7 +7,6 @@ USERNAME="$1"
 PASSWORD="$2"
 TESTCASE_TRACKER_ID="$3"
 TESTRUN_TRACKER_ID="$4"
-ZIP_FILE="$5"
 
 # Optional fields - can leave empty or set values
 RELEASE_ID=""
@@ -33,6 +32,7 @@ curl -X POST "https://pp-250428092473.portal.ptc.io:9443/cb/api/xunit" \
   -F "files=@${FILE}"
   -F "testRunTrackerId=${TESTRUN_TRACKER_ID}" \
   -F "testConfigurationId=${TESTCONFIGURATION_ID}"
+
 
 
 
