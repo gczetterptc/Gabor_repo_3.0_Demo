@@ -18,7 +18,7 @@ DEFAULT_PACKAGE_PREFIX=""
 TESTCONFIGURATION_ID=""
 
 # Execute curl to upload the ZIP file
-curl -X POST "https://pp-2509090744c6.portal.ptc.io:9443/cb/api/xunit" \
+curl -X POST "https://pp-250428092473.portal.ptc.io:9443/cb/api/xunit" \
   --user "${USERNAME}:${PASSWORD}" \
   -H "accept: */*" \
   -H "Content-Type: multipart/form-data" \
@@ -31,3 +31,4 @@ curl -X POST "https://pp-2509090744c6.portal.ptc.io:9443/cb/api/xunit" \
   -F "files=@${ZIP_FILE};type=application/zip" \
   -F "testRunTrackerId=${TESTRUN_TRACKER_ID}" \
   -F "testConfigurationId=${TESTCONFIGURATION_ID}"
+
