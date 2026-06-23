@@ -29,3 +29,5 @@ public class RandomBlink {
 public class StateChange {
     //New todo
 }
+
+Test
